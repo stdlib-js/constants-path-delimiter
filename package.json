@@ -1,0 +1,36 @@
+{
+  "name": "@stdlib/constants-path-delimiter",
+  "version": "0.0.0",
+  "description": "Platform-specific path delimiter.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/constants-path-delimiter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdstring",
+    "constant",
+    "const",
+    "path",
+    "delimiter",
+    "delimit",
+    "split",
+    "posix",
+    "linux",
+    "darwin",
+    "bsd",
+    "windows",
+    "win32"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
