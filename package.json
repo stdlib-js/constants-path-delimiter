@@ -37,7 +37,8 @@
   "dependencies": {
     "@stdlib/assert-is-windows": "^0.0.x",
     "@stdlib/constants-path-delimiter-posix": "^0.0.x",
-    "@stdlib/constants-path-delimiter-win32": "^0.0.x"
+    "@stdlib/constants-path-delimiter-win32": "^0.0.x",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.x"
   },
   "devDependencies": {
     "proxyquire": "^2.0.0",
