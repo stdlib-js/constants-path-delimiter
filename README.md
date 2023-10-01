@@ -35,19 +35,30 @@ limitations under the License.
 
 > Platform-specific path delimiter.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/constants-path-delimiter
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-delimiter@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/constants-path-delimiter/tags). For example,
-
-```javascript
-import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-delimiter@v0.1.0-esm/index.mjs';
+var PATH_DELIMITER = require( '@stdlib/constants-path-delimiter' );
 ```
 
 #### PATH_DELIMITER
@@ -55,7 +66,7 @@ import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path
 Platform-specific path delimiter.
 
 ```javascript
-import IS_WINDOWS from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-windows@esm/index.mjs';
+var IS_WINDOWS = require( '@stdlib/assert-is-windows' );
 
 var bool;
 if ( IS_WINDOWS ) {
@@ -77,14 +88,9 @@ if ( IS_WINDOWS ) {
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import IS_WINDOWS from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-windows@esm/index.mjs';
-import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-delimiter@esm/index.mjs';
+```javascript
+var IS_WINDOWS = require( '@stdlib/assert-is-windows' );
+var PATH_DELIMITER = require( '@stdlib/constants-path-delimiter' );
 
 var PATH;
 if ( IS_WINDOWS ) {
@@ -95,10 +101,6 @@ if ( IS_WINDOWS ) {
 var paths = PATH.split( PATH_DELIMITER );
 console.log( paths );
 // => [...]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -129,7 +131,7 @@ console.log( paths );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -159,8 +161,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/constants-path-delimiter.svg
 [npm-url]: https://npmjs.org/package/@stdlib/constants-path-delimiter
 
-[test-image]: https://github.com/stdlib-js/constants-path-delimiter/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/constants-path-delimiter/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/constants-path-delimiter/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/constants-path-delimiter/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/constants-path-delimiter/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/constants-path-delimiter?branch=main
@@ -191,9 +193,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/constants/path/delimiter-posix]: https://github.com/stdlib-js/constants-path-delimiter-posix/tree/esm
+[@stdlib/constants/path/delimiter-posix]: https://github.com/stdlib-js/constants-path-delimiter-posix
 
-[@stdlib/constants/path/delimiter-win32]: https://github.com/stdlib-js/constants-path-delimiter-win32/tree/esm
+[@stdlib/constants/path/delimiter-win32]: https://github.com/stdlib-js/constants-path-delimiter-win32
 
 <!-- </related-links> -->
 
