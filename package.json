@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/constants-path-delimiter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Platform-specific path delimiter.",
   "license": "Apache-2.0",
   "author": {
@@ -36,8 +36,8 @@
   },
   "dependencies": {
     "@stdlib/assert-is-windows": "^0.1.0",
-    "@stdlib/constants-path-delimiter-posix": "^0.1.0",
-    "@stdlib/constants-path-delimiter-win32": "^0.1.0"
+    "@stdlib/constants-path-delimiter-posix": "^0.1.1",
+    "@stdlib/constants-path-delimiter-win32": "^0.1.1"
   },
   "devDependencies": {
     "proxyquire": "^2.0.0",
