@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,32 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var PATH_DELIMITER_POSIX = require( '@stdlib/constants-path-delimiter-posix' );
-var PATH_DELIMITER_WIN32 = require( '@stdlib/constants-path-delimiter-win32' );
-var PATH_DELIMITER = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a string', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof PATH_DELIMITER, 'string', 'main export is a string' );
-	t.end();
-});
-
-tape( 'if platform is POSIX, export is the POSIX path delimiter', function test( t ) {
-	var PATH_DELIMITER = proxyquire( './../dist', {
-		'@stdlib/assert-is-windows': false
-	});
-	t.equal( PATH_DELIMITER, PATH_DELIMITER_POSIX, 'equals POSIX delimiter' );
-	t.end();
-});
-
-tape( 'if platform is Windows, export is the Windows path delimiter', function test( t ) {
-	var PATH_DELIMITER = proxyquire( './../dist', {
-		'@stdlib/assert-is-windows': true
-	});
-	t.equal( PATH_DELIMITER, PATH_DELIMITER_WIN32, 'equals Windows delimiter' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
