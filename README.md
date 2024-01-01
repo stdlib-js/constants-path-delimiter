@@ -35,14 +35,30 @@ limitations under the License.
 
 > Platform-specific path delimiter.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/constants-path-delimiter
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-delimiter@deno/mod.js';
+var PATH_DELIMITER = require( '@stdlib/constants-path-delimiter' );
 ```
 
 #### PATH_DELIMITER
@@ -50,7 +66,7 @@ import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path
 Platform-specific path delimiter.
 
 ```javascript
-import IS_WINDOWS from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-windows@deno/mod.js';
+var IS_WINDOWS = require( '@stdlib/assert-is-windows' );
 
 var bool;
 if ( IS_WINDOWS ) {
@@ -73,8 +89,8 @@ if ( IS_WINDOWS ) {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import IS_WINDOWS from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-windows@deno/mod.js';
-import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-delimiter@deno/mod.js';
+var IS_WINDOWS = require( '@stdlib/assert-is-windows' );
+var PATH_DELIMITER = require( '@stdlib/constants-path-delimiter' );
 
 var PATH;
 if ( IS_WINDOWS ) {
@@ -115,7 +131,7 @@ console.log( paths );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -132,7 +148,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -177,9 +193,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/constants/path/delimiter-posix]: https://github.com/stdlib-js/constants-path-delimiter-posix/tree/deno
+[@stdlib/constants/path/delimiter-posix]: https://github.com/stdlib-js/constants-path-delimiter-posix
 
-[@stdlib/constants/path/delimiter-win32]: https://github.com/stdlib-js/constants-path-delimiter-win32/tree/deno
+[@stdlib/constants/path/delimiter-win32]: https://github.com/stdlib-js/constants-path-delimiter-win32
 
 <!-- </related-links> -->
 
