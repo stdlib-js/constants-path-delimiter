@@ -35,7 +35,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-windows": "^0.2.0",
+    "@stdlib/assert-is-windows": "^0.2.1",
     "@stdlib/constants-path-delimiter-posix": "^0.2.1",
     "@stdlib/constants-path-delimiter-win32": "^0.2.1"
   },
