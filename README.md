@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-delimiter@esm/index.mjs';
+import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-delimiter@v0.2.2-esm/index.mjs';
 ```
 
 #### PATH_DELIMITER
@@ -79,7 +79,7 @@ if ( IS_WINDOWS ) {
 <script type="module">
 
 import IS_WINDOWS from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-windows@esm/index.mjs';
-import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-delimiter@esm/index.mjs';
+import PATH_DELIMITER from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-delimiter@v0.2.2-esm/index.mjs';
 
 var PATH;
 if ( IS_WINDOWS ) {
